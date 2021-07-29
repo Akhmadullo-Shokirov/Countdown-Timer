@@ -42,3 +42,26 @@ h1 {
 .countdown-el span {
     font-size: 1.3rem;
 }
+
+.generateBtn-container {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+}
+
+.generateBtn {
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.generateBtn:hover {
+    background-color: black;
+    border: none;
+    color: white;
+}
