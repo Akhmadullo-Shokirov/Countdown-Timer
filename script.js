@@ -2,6 +2,7 @@ const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
+const generateBtn = document.getElementById("generateBtn");
 
 const newYears = "1 Jan 2022";
 
@@ -19,6 +20,10 @@ function countdown() {
   hoursEl.innerHTML = formatTime(hours);
   minutesEl.innerHTML = formatTime(minutes);
   secondsEl.innerHTML = formatTime(seconds);
+}
+
+function generateTimer() {
+    
 }
 
 function formatTime(time) {
