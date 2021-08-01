@@ -10,6 +10,7 @@ let eventTitle = "New Years Eve";
 
 function createEvent() {
   let bodyElement = document.querySelector("body");
+  bodyElement.classList.remove("active");
   bodyElement.innerHTML = `
     <h1 id="title">${eventTitle}</h1>
     <div class="countdown-container">
@@ -68,10 +69,14 @@ function countdown() {
 
 function generateTimer() {
 
+  bodyContainer.classList.add("active");
   bodyContainer.innerHTML = "";
   let eventContainer = document.createElement("div");
   eventContainer.classList.add("event-container");
   eventContainer.innerHTML = `
+    <div class="closeContainer">
+    <button id="closeBtn"><i class="fas fa-times"></i></button>
+    </div>
     <h2>Event Info</h2>
     <div class="main-container">
         <div class="input-container">
@@ -108,6 +113,7 @@ function generateTimer() {
   addDate();
   
   document.getElementById("generate").addEventListener("click", getEventInfo);
+  document.getElementById("closeBtn").addEventListener("click", createEvent);
 }
 
 function addDate() {
