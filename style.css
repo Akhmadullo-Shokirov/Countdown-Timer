@@ -17,7 +17,7 @@ body {
 }
 
 .active {
-    background: #333333;
+    background:rgba(61, 61, 61, 0.315);
 }
 
 h1 {
